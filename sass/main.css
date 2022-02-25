@@ -77,7 +77,6 @@ a {
 }
 
 .container-header {
-  width: 1200px;
   padding: 0 15px 0 15px;
   margin: 0 auto;
   display: -webkit-box;
@@ -86,6 +85,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 767px) {
+  .container-header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .container-footer {
@@ -351,6 +358,12 @@ a {
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .header {
+    padding: 10px 0 10px 0;
+  }
+}
+
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -360,8 +373,48 @@ a {
   color: #2196f3;
 }
 
+@media (max-width: 1199px) {
+  .logo {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+  }
+}
+
 .header__logo {
   color: #212121;
+}
+
+.menu-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  fill: #212121;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-btn__icon {
+  width: 24px;
+  height: 16px;
+}
+
+.icon__burger {
+  width: 24px;
+  height: 16px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .navigation {
@@ -377,6 +430,19 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 93px;
+}
+
+@media (max-width: 1199px) {
+  .nav-list {
+    margin-left: 88px;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-list {
+    display: none;
+  }
 }
 
 .nav-list__item {
@@ -421,8 +487,32 @@ a {
   margin-left: auto;
 }
 
+@media (max-width: 1199px) {
+  .nav-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-info {
+    display: none;
+  }
+}
+
 .nav-info__item {
   margin-right: 30px;
+}
+
+@media (max-width: 1199px) {
+  .nav-info__item {
+    margin-right: 0px;
+  }
+  .nav-info__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .nav-info__item:nth-last-child(1) {

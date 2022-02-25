@@ -6,6 +6,9 @@
   // border-bottom: 1px solid #ececec;
   @include font(500, 14px, 16px, 0.02em, #000);
   position: relative;
+  @media (max-width: $tablet) {
+    padding: 10px 0 10px 0;
+  }
 }
 
 .logo {
@@ -16,8 +19,33 @@
   // line-height: 1.19;
   // letter-spacing: 0.03em;
   @include font(700, 26px, 31px, 0.03em, $primary-color);
-  // !? margin-right: 93px;
+  @media (max-width: $desktop) {
+    @include font(700, 24px, 28px, 0.03em, $primary-color);
+  }
 }
 .header__logo {
   color: $accent-color;
+}
+.menu-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  fill: $accent-color;
+  padding: 0;
+  margin: 0;
+}
+.menu-btn__icon {
+  width: 24px;
+  height: 16px;
+}
+.icon__burger {
+  width: 24px;
+  height: 16px;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  // ! transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
