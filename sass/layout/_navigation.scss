@@ -1,3 +1,20 @@
+.menu-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  @media (max-width: $tablet) {
+    position: absolute;
+    display: block;
+    padding: 60px 0 60px 0;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    z-index: 999;
+    background-color: red;
+  }
+}
+.menu-container.is-open .navigation {
+}
 .navigation {
   display: flex;
   align-items: center;

@@ -4,10 +4,16 @@
   // line-height: 1.14;
   // letter-spacing: 0.02em;
   // border-bottom: 1px solid #ececec;
+
   @include font(500, 14px, 16px, 0.02em, #000);
   position: relative;
   @media (max-width: $tablet) {
     padding: 10px 0 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
   }
 }
 
