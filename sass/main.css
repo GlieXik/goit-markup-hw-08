@@ -400,9 +400,23 @@ a {
   width: 40px;
   height: 40px;
   background-color: transparent;
-  fill: #212121;
+  display: none;
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 767px) {
+  .menu-btn {
+    display: block;
+  }
+}
+
+.menu-btn.is-open .icon__burger {
+  display: none;
+}
+
+.menu-btn.is-open .icon__cross {
+  display: block;
 }
 
 .menu-btn__icon {
@@ -411,10 +425,12 @@ a {
 }
 
 .icon__burger {
-  width: 24px;
-  height: 16px;
-  margin-top: auto;
-  margin-bottom: auto;
+  fill: #212121;
+}
+
+.icon__cross {
+  display: none;
+  fill: #212121;
 }
 
 .navigation {

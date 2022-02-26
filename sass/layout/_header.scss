@@ -33,19 +33,30 @@
   width: 40px;
   height: 40px;
   background-color: transparent;
-  fill: $accent-color;
+  display: none;
   padding: 0;
   margin: 0;
+  @media (max-width: $tablet) {
+    display: block;
+  }
+}
+.menu-btn.is-open .icon__burger {
+  display: none;
+}
+.menu-btn.is-open .icon__cross {
+  display: block;
 }
 .menu-btn__icon {
   width: 24px;
   height: 16px;
 }
 .icon__burger {
-  width: 24px;
-  height: 16px;
-  margin-top: auto;
-  margin-bottom: auto;
+  fill: $accent-color;
+  // !transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon__cross {
+  display: none;
+  fill: $accent-color;
 
-  // ! transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // !transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
