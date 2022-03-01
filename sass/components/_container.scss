@@ -6,7 +6,7 @@
     width: $tablet;
   }
   @media (max-width: $tablet) {
-    width: 100%;
+    width: $mobile;
   }
 }
 .container-header {

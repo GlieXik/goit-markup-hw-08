@@ -3,7 +3,9 @@
   align-items: center;
   flex-grow: 1;
   &.is-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     .soc-list {
       display: flex;
     }
@@ -26,6 +28,7 @@
 .menu-container-bottom {
 }
 .navigation {
+  margin-bottom: auto;
 }
 .nav-list {
   display: flex;
@@ -165,11 +168,13 @@
 
 .soc-list {
   margin-left: 40px;
-  margin-bottom: 48px;
+
   display: none;
 }
-.soc-list_item {
-  margin-right: 20px;
+.soc-list_item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+  margin-right: 10px;
 }
 .soc-list_link {
   @include font(500, 18px, 22px, 0.02em, $primary-color);
