@@ -2,9 +2,16 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  @media (max-width: $tablet) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 .menu-list__item {
   margin-right: 8px;
+  @media (max-width: $tablet) {
+    margin-bottom: 15px;
+  }
 }
 .menu-list__item:nth-last-child(1) {
   margin-right: 0px;

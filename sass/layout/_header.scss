@@ -46,6 +46,10 @@
   @media (max-width: $tablet) {
     display: block;
   }
+  &:hover,
+  &:focus {
+    fill: $primary-color;
+  }
 }
 .menu-btn.is-open .icon__burger {
   display: none;
@@ -58,12 +62,9 @@
   height: 16px;
 }
 .icon__burger {
-  fill: $accent-color;
-  // !transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon__cross {
   display: none;
-  fill: $accent-color;
 
-  // !transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // ! transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -115,7 +115,7 @@
 }
 
 .spam__input {
-  min-width: 358px;
+  width: 358px;
   height: 50px;
   padding-left: 16px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -126,7 +126,7 @@
   color: #fff;
   outline: 0;
   @media (max-width: $desktop) {
-    min-width: 450px;
+    max-width: 450px;
   }
 }
 
