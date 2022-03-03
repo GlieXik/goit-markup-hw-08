@@ -1463,6 +1463,13 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1199px) {
+  .menu-list {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1472,6 +1479,7 @@ a {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-bottom: 40px;
   }
 }
 
@@ -1529,19 +1537,6 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 50px;
-}
-
-@media (max-width: 1199px) {
-  .grid {
-    padding-top: 30px;
-  }
-}
-
-@media (max-width: 767px) {
-  .grid {
-    padding-top: 40px;
-  }
 }
 
 .grid__item {

@@ -2,9 +2,14 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  margin-bottom: 50px;
+  @media (max-width: $desktop) {
+    margin-bottom: 30px;
+  }
   @media (max-width: $tablet) {
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-bottom: 40px;
   }
 }
 .menu-list__item {
