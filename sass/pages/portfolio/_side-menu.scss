@@ -11,6 +11,9 @@
   margin-right: 8px;
   @media (max-width: $tablet) {
     margin-bottom: 15px;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
 }
 .menu-list__item:nth-last-child(1) {

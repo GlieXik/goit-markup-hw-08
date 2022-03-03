@@ -1,8 +1,9 @@
 .footer {
   background-color: #2f303a;
+  padding: 60px 0 60px 0;
 }
 .footer-info {
-  padding-top: 60px;
+  // padding-top: 60px;
 }
 .footer-logo {
   // color: $primary-color;
@@ -46,7 +47,9 @@
 }
 .footer-socials {
   //! margin-left: 70px;
-  margin-top: 60px;
+  @media (max-width: $tablet) {
+    margin-top: 60px;
+  }
 }
 .footer-social__title {
   // font-weight: 700;
@@ -97,6 +100,9 @@
 
 .spam {
   //! margin-left: 93px;
+  @media (max-width: $desktop) {
+    margin-top: 60px;
+  }
 }
 .spam form {
   display: flex;
@@ -104,7 +110,7 @@
   @media (max-width: $desktop) {
     align-items: center;
     flex-direction: column;
-    margin-top: 60px;
+    // margin-top: 60px;
   }
 }
 .spam-wrapper {
